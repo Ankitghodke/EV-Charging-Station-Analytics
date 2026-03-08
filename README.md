@@ -88,7 +88,7 @@ Power BI (Interactive Executive Dashboard)
 - Peak Charging Hours distribution
 - Station Performance Benchmarking
 - City-wise Revenue Breakdown
-- Weather vs Duration Impact matrix
+- Revenue Breakdown by Weather Condition and Duration Category
 - Interactive Slicers — City, Vehicle Type, Charger Type, Weather
 
 ---
