@@ -1,9 +1,9 @@
-# EV Charging Station Analysis
+# ⚡ EV Charging Station Analysis
 Python · SQL Server · Power BI · End-to-End Analytics Pipeline
 
 ---
 
-## Overview
+## 📌 Overview
 
 India's EV infrastructure is growing fast, but most operators don't have a clear picture of where demand is concentrated, which stations are underperforming, or what's driving revenue gaps month to month. This project analyzes 156,455 charging sessions across 200 stations in 5 cities to answer those questions — covering revenue patterns, energy consumption, peak demand, and station-level performance.
 
@@ -14,7 +14,7 @@ India's EV infrastructure is growing fast, but most operators don't have a clear
 
 ---
 
-## How it works
+## 🏗️ How it works
 ```
 Raw Dataset (156,455 records | 17 features)
         ↓
@@ -27,7 +27,7 @@ Power BI (Interactive Executive Dashboard)
 
 ---
 
-## Dataset
+## 📊 Dataset
 
 | Metric | Value |
 |--------|-------|
@@ -45,20 +45,20 @@ Power BI (Interactive Executive Dashboard)
 
 ---
 
-## Analysis
+## 🧠 Analysis
 
-**Feature engineering**
+**🔹 Feature engineering**
 - Extracted charging hour from timestamps — peak demand falls at 12PM (6,666 sessions)
 - Created month and season features — 8.8% revenue gap between best month (January ₹69.8L) and worst (February ₹64.1L)
 - Built revenue per kWh aggregations — confirmed energy consumption as the primary revenue driver
 - Categorized session durations — Short (40,143) / Medium (70,153) / Long (46,159)
 
-**Correlation analysis**
+**🔹 Correlation analysis**
 - Strong positive correlation: energy consumed vs charging cost — confirms energy as the main revenue variable
 - Positive correlation: charging duration vs energy consumption
 - Fast vs slow charger avg cost: ₹522.65 vs ₹518.05 — only ₹4.60 gap despite similar ~70 min sessions
 
-**SQL business intelligence queries**
+**🔹 SQL business intelligence queries**
 
 | Query | Technique | Finding |
 |-------|-----------|---------|
@@ -70,7 +70,7 @@ Power BI (Interactive Executive Dashboard)
 
 ---
 
-## Power BI dashboard
+## 📊 Power BI dashboard
 
 KPIs tracked: total sessions (156K), total revenue (₹8.14Cr), avg charging cost (₹520), avg duration (70 mins), avg energy (32.50 kWh)
 
@@ -85,7 +85,7 @@ Visuals included:
 
 ---
 
-## Key findings
+## 📈 Key findings
 
 | Finding | Numbers | Action |
 |---------|---------|--------|
@@ -97,19 +97,19 @@ Visuals included:
 
 ---
 
-## File structure
+## 📂 File structure
 ```
 EV-Charging-Station-Analysis/
 ├── ev_charging.ipynb
 ├── ev_charg.sql
-├── ev_charging_station_analyticss_dashboard.pbix
+├── ev_charging_analysis_dashboard.pbix
 ├── EV_Charging_Cleaned.csv
-└── EV_Charging_Station_Analytics_Dashboard.PNG
+└── ev_charging_dashboard.PNG
 ```
 
 ---
 
-## How to run
+## 🚀 How to run
 
 1. Run `ev_charging.ipynb` to walk through data cleaning, feature engineering, and correlation analysis
 2. Import `ev_charg.sql` into SQL Server Management Studio (SSMS) to run the business intelligence queries
@@ -117,13 +117,13 @@ EV-Charging-Station-Analysis/
 
 ---
 
-## Dashboard preview
+## 📸 Dashboard preview
 
 ![Dashboard](EV_Charging_Station_Analytics_Dashboard.PNG)
 
 ---
 
-## Conclusions
+## 🎯 Conclusions
 
 The energy consumption finding is the most straightforward — the more kWh delivered, the more revenue generated. That's expected. What's less obvious is what to do with the fast charger pricing gap.
 
